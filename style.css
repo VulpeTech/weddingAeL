@@ -9,7 +9,24 @@
   align-items: center;
   justify-content: center;
   height: 100VH;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.first {
+  background-image: url(./assets/first-sections-background.png);
+}
+
+.second {
+  background-image: url(./assets/second-sections-background.png);
+}
+
+.third {
+  background-image: url(./assets/third-sections-background.png);
+}
+
+.fourth {
+  background-image: url(./assets/fourth-sections-backgroud.png);
 }
 
 .second, .third {
@@ -38,17 +55,15 @@
 }
 
 .main-names, .more-names {
-  height: 500px;
+  height: 100%;
   width: 50%;
   display: flex;
   justify-content: space-between;
 }
 
-
 .invites {
   display: flex;
   flex-direction: column;
-  gap: 100px;
 }
 
 .parents-names {
@@ -63,3 +78,22 @@
   align-items: center;
 }	
 
+.day-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more-informations {
+  text-align: center;
+}
+
+.fourth {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 500px;
+}
