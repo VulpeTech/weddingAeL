@@ -9,25 +9,50 @@
   align-items: center;
   justify-content: center;
   height: 100VH;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #EAE5E1;
 }
 
 .first {
-  background-image: url(./assets/first-sections-background.png);
+  font-family: "The Seasons";
+  color: #7D7463;
+  font-size: 199px;
 }
 
-.second {
-  background-image: url(./assets/second-sections-background.png);
+.first span {
+  color: #A34723;
+  font-size: 120px;
 }
 
+.initial-styles {
+  position: relative;
+  z-index: 1;
+}
+
+.smoke{
+  position: absolute;
+}
+
+
+ .second h1{
+ color: #A34723;
+ font-size: 23.3px;
+ font-family: "Aileron";
+}
+
+.second h2 {
+  color: #6B8272;
+  font-size: 14px;
+  font-family: "The Seasons";
+}
+
+/*
 .third {
-  background-image: url(./assets/third-sections-background.png);
+  background-image: url(./assets/img/third-sections-background.png);
 }
 
 .fourth {
-  background-image: url(./assets/fourth-sections-backgroud.png);
-}
+  background-image: url(./assets/img/fourth-sections-backgroud.png);
+}  */
 
 .second, .third {
   flex-wrap: wrap;

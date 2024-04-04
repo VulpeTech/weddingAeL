@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "The Seasons";
+  src: url(assets/fonts/Fontspring-DEMO-theseasons-reg.otf);
+}
+
+@font-face {
+  font-family: "The Seasons";
+  src: url(assets/fonts/Fontspring-DEMO-theseasons-bd.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "The Seasons";
+  src: url(assets/fonts/Fontspring-DEMO-theseasons-bdit.otf);
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "The Seasons";
+  src:url(assets/fonts/Fontspring-DEMO-theseasons-it.otf);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "The Seasons";
+  src: url(assets/fonts/Fontspring-DEMO-theseasons-lt.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "The Seasons";
+  src: url(assets/fonts/Fontspring-DEMO-theseasons-ltit.otf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aileron";
+  src: url(assets/fonts/Aileron-UltraLightItalic.otf);
+}
