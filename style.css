@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c5bdb7;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #EAE5E1;
+}
+
 .section {
   display: flex;
   position: relative;
@@ -14,15 +29,18 @@
   background-color: #EAE5E1;
 }
 
+
 .first {
-  font-family: "The Seasons";
+  font-family: "Playfair";
   color: #7D7463;
   font-size: 199px;
 }
 
 .first span {
+  font-family: "Montserrat";
+  font-weight: 100;
   color: #A34723;
-  font-size: 120px;
+  font-size: 160px;
 }
 
 .initial-styles {
@@ -46,8 +64,9 @@
 
 .second h2 {
   color: #6B8272;
-  font-size: 14px;
-  font-family: "The Seasons";
+  font-size: 12px;
+  font-family: "Montserrat";
+  font-weight: 500;
 }
 
 /*
@@ -93,34 +112,97 @@
   height: 70%;
 }
 
-.content-third-section {
-  width: 100%;
+
+/* Terceira sessão */
+
+.flowers {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.main-names, .more-names {
+
+
+.image-flower img {
   height: 100%;
-  width: 50%;
+}
+
+.right {
+  right: -18%;
+}
+
+.left {
+  left: -12%;
+}
+
+.content-third-section {
+  position: relative;
   display: flex;
   justify-content: space-between;
-}
-
-.invites {
-  display: flex;
   flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+}
+.image-flower {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
 }
 
-.parents-names {
-  justify-content: center;
+.weddings{
+  width: 100%;
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.weddings-names, .initials {
+  color: #36523F;
+  font-family: "Playfair";
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.weddings-names {
+  font-size: 25.6px;
+}
+
+.initials {
+  font-size: 58px;
+}
+
+.initials span {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-size: 40px;
+  color: #A34723;
+}
+
+.all-parents {
+  width: 80%;
+  text-align: center;
+}
+
+.parents-name {
+  font-family: "Aileron";
+  font-size: 11.8px;
+  display: flex;
+  color: #36523F;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text-invite {
+  font-family: "Aileron";
+  font-size: 11.8px;
+  color: #36523F;
+  margin: 2%;
 }
 
 .informations {
   display: flex;
-  width: 50%;
+  width: 70%;
   flex-direction: column;
   align-items: center;
 }	
@@ -133,10 +215,14 @@
 }
 
 .day-information-text {
-  font-family: "The Seasons";
+  font-family: "Montserrat";
+  font-weight: 300;
   color: #A34723;
-  font-weight: 700;
   font-size: 32px;
+}
+
+.more-informations {
+  margin-bottom: 25px;
 }
 
 .more-informations-text {
@@ -145,9 +231,29 @@
   color: #6B8272;
 }
 
+
+
+/* Fim terceira sessão */
+
+/* Quarta sessão */
+
 .fourth {
+  justify-content: space-around;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
+.fourth h1{
+  font-family: "Montserrat";
+  font-family: "Aileron";
+  color: #36523f;
+}
+
+.qr-code img{
+ height: 600px;
+}
+
+.graduated-line {
+  height: 1px;
+  background: linear-gradient(to right, rgba(54, 82, 63,1) 0%, rgba(234,229,225,11) 100%);
+  border: none;
+}
