@@ -4,17 +4,26 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
+  height: 100%;
+  width: 100%;
   overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 ::-webkit-scrollbar {
   width: 12px;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #c5bdb7;
   border-radius: 5px;
 }
+
 ::-webkit-scrollbar-track {
   background-color: #EAE5E1;
 }
@@ -25,10 +34,9 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100VH;
+  min-height: 100vh;
   background-color: #EAE5E1;
 }
-
 
 .first {
   font-family: "Playfair";
@@ -48,18 +56,15 @@ body {
   z-index: 1;
 }
 
-
-
 .first img {
   position: absolute;
   height: 100%;
 }
 
-
- .second h1{
- color: #A34723;
- font-size: 23.3px;
- font-family: "Aileron";
+.second h1 {
+  color: #A34723;
+  font-size: 23.3px;
+  font-family: "Aileron";
 }
 
 .second h2 {
@@ -69,14 +74,138 @@ body {
   font-weight: 500;
 }
 
-/*
-.third {
-  background-image: url(./assets/img/third-sections-background.png);
+/* Responsividade */
+@media (max-width: 1200px) {
+  .first {
+    font-size: 150px;
+  }
+
+  .first span {
+    font-size: 120px;
+  }
+
+  .second h1 {
+    font-size: 20px;
+  }
+
+  .second h2 {
+    font-size: 10px;
+  }
+
+  .initial-styles {
+    font-size: 150px;
+  }
+
+  .initial-styles span {
+    font-size: 120px;
+  }
+
+  .qr-code img {
+    height: 400px;
+  }
+
+  .image-flower img {
+    height: 70%;
+  }
+
+  .weddings-names, .initials {
+    font-size: 22px; /* Ajuste do tamanho da fonte */
+  }
+
+  .day-information-text, .more-informations-text {
+    font-size: 28px; /* Ajuste do tamanho da fonte */
+  }
 }
 
-.fourth {
-  background-image: url(./assets/img/fourth-sections-backgroud.png);
-}  */
+@media (max-width: 768px) {
+  .first {
+    font-size: 100px;
+  }
+
+  .first span {
+    font-size: 80px;
+  }
+
+  .second h1 {
+    font-size: 18px;
+  }
+
+  .second h2 {
+    font-size: 8px;
+  }
+
+  .initial-styles {
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .initial-styles span {
+    font-size: 80px;
+  }
+
+  .qr-code img {
+    height: 300px;
+  }
+
+  .image-flower img {
+    height: 50%;
+  }
+
+  .weddings-names, .initials {
+    font-size: 18px; /* Ajuste do tamanho da fonte */
+  }
+
+  .day-information-text, .more-informations-text {
+    font-size: 24px; /* Ajuste do tamanho da fonte */
+  }
+}
+
+@media (max-width: 480px) {
+  .first {
+    font-size: 70px;
+  }
+
+  .first span {
+    font-size: 60px;
+  }
+
+  .second h1 {
+    font-size: 16px;
+  }
+
+  .second h2 {
+    font-size: 7px;
+  }
+
+  .initial-styles {
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .initial-styles span {
+    font-size: 60px;
+  }
+
+  .qr-code img {
+    height: 200px;
+  }
+
+  .image-flower img {
+    height: 30%;
+  }
+
+  .weddings-names, .initials {
+    font-size: 14px; /* Ajuste do tamanho da fonte */
+  }
+
+  .day-information-text, .more-informations-text {
+    font-size: 20px; /* Ajuste do tamanho da fonte */
+  }
+}
 
 .second, .third {
   flex-wrap: wrap;
@@ -84,8 +213,8 @@ body {
 
 .aspas {
   position: absolute;
-  bottom: 67%;
-  left: -4%;
+  bottom: 85%;
+  left: -12%;
 }
 
 .aspas img {
@@ -104,7 +233,6 @@ body {
   position: absolute;
   bottom: -30px;
   right: 50px;
-
 }
 
 .smoke-second {
@@ -112,43 +240,51 @@ body {
   height: 70%;
 }
 
-
 /* Terceira sessão */
 
 .flowers {
   height: 100%;
 }
 
+.smoke {
+  position: absolute;
+  margin-right: 2500px;
+  overflow: none;
+}
 
+.smoke img {
+  height: 2500px;
+}
 
 .image-flower img {
   height: 100%;
 }
 
 .right {
-  right: -18%;
+  right: -20%;
 }
 
 .left {
-  left: -12%;
+  left: -18%;
 }
 
 .content-third-section {
   position: relative;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  justify-content: center; /* Ajuste para centralizar */
   align-items: center;
+  flex-direction: column;
   height: 100%;
   width: 80%;
 }
+
 .image-flower {
   position: absolute;
   z-index: 1;
-  height: 100%;
+  height: 20%;
 }
 
-.weddings{
+.weddings {
   width: 100%;
   display: flex;
   align-items: center;
@@ -159,13 +295,18 @@ body {
   color: #36523F;
   font-family: "Playfair";
   width: 30%;
-  align-items: center;
+  display: flex; /* Adicionado para alinhar verticalmente */
+  align-items: center; /* Adicionado para alinhar verticalmente */
   justify-content: center;
   text-align: center;
 }
 
 .weddings-names {
   font-size: 25.6px;
+}
+
+.leandroname {
+  margin-left: 20px;
 }
 
 .initials {
@@ -175,7 +316,7 @@ body {
 .initials span {
   font-family: "Montserrat";
   font-weight: 200;
-  font-size: 40px;
+  font-size: 35px;
   color: #A34723;
 }
 
@@ -205,7 +346,7 @@ body {
   width: 70%;
   flex-direction: column;
   align-items: center;
-}	
+}
 
 .day-information {
   display: flex;
@@ -218,7 +359,7 @@ body {
   font-family: "Montserrat";
   font-weight: 300;
   color: #A34723;
-  font-size: 32px;
+  font-size: 26px;
 }
 
 .more-informations {
@@ -227,11 +368,9 @@ body {
 
 .more-informations-text {
   font-family: "Aileron";
-  font-size: 32px;
+  font-size: 20px;
   color: #6B8272;
 }
-
-
 
 /* Fim terceira sessão */
 
@@ -242,18 +381,19 @@ body {
   flex-direction: column;
 }
 
-.fourth h1{
+.fourth h1 {
   font-family: "Montserrat";
   font-family: "Aileron";
   color: #36523f;
+  font-size: 100%;
 }
 
-.qr-code img{
- height: 600px;
+.qr-code img {
+  height: 400px;
 }
 
 .graduated-line {
   height: 1px;
-  background: linear-gradient(to right, rgba(54, 82, 63,1) 0%, rgba(234,229,225,11) 100%);
+  background: linear-gradient(to right, rgba(54, 82, 63, 1) 0%, rgba(234, 229, 225, 11) 100%);
   border: none;
 }
