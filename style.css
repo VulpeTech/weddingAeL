@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -25,7 +26,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #EAE5E1;
+  background-color: #eae5e1;
 }
 
 .section {
@@ -35,19 +36,19 @@ body {
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  background-color: #EAE5E1;
+  background-color: #eae5e1;
 }
 
 .first {
   font-family: "Playfair";
-  color: #7D7463;
+  color: #7d7463;
   font-size: 199px;
 }
 
 .first span {
   font-family: "Montserrat";
   font-weight: 100;
-  color: #A34723;
+  color: #a34723;
   font-size: 160px;
 }
 
@@ -62,16 +63,219 @@ body {
 }
 
 .second h1 {
-  color: #A34723;
+  color: #a34723;
   font-size: 23.3px;
   font-family: "Aileron";
 }
 
 .second h2 {
-  color: #6B8272;
+  color: #6b8272;
   font-size: 12px;
   font-family: "Montserrat";
   font-weight: 500;
+}
+
+.second,
+.third {
+  flex-wrap: wrap;
+}
+
+.aspas {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 60px;
+}
+
+.content-second-section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.second-section-references {
+  position: absolute;
+  bottom: -30px;
+  right: 50px;
+}
+
+.smoke-second {
+  position: absolute;
+  height: 70%;
+}
+
+/* Terceira sessão */
+
+.flowers {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: none;
+  opacity: 0.5;
+}
+
+.flowers img:first-child {
+  left: -200px;
+  position: absolute;
+}
+.flowers img:last-child {
+  right: -200px;
+  position: absolute;
+}
+
+.smoke {
+  position: absolute;
+  margin-right: 2500px;
+  overflow: none;
+}
+
+.smoke img {
+  height: 2500px;
+}
+
+.right {
+  right: -20%;
+}
+
+.left {
+  left: -18%;
+}
+
+.content-third-section {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Ajuste para centralizar */
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 8px;
+  gap: 16px;
+}
+
+.weddings {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.weddings h1 {
+  color: #36523f;
+  font-family: "Playfair";
+  display: flex; /* Adicionado para alinhar verticalmente */
+  align-items: center; /* Adicionado para alinhar verticalmente */
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+}
+
+.weddings {
+  font-size: 30px;
+}
+
+.weddings h1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.weddings span {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-size: 35px;
+  color: #a34723;
+}
+
+.all-parents {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.parents-name {
+  font-family: "Aileron";
+  font-size: 11.8px;
+  display: flex;
+  color: #36523f;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.text-invite {
+  font-family: "Aileron";
+  font-size: 20px;
+  color: #36523f;
+}
+
+.informations {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.day-information-text {
+  font-family: "Montserrat";
+  font-weight: 300;
+  color: #a34723;
+  font-size: 26px;
+  text-align: center;
+}
+
+.more-informations {
+  margin-bottom: 25px;
+}
+
+.more-informations-text {
+  font-family: "Aileron";
+  font-size: 20px;
+  color: #6b8272;
+}
+
+/* Fim terceira sessão */
+
+/* Quarta sessão */
+
+.fourth {
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.fourth h1 {
+  font-family: "Montserrat";
+  font-family: "Aileron";
+  color: #36523f;
+  font-size: 100%;
+  text-align: center;
+  padding: 12px;
+}
+
+.qr-code img {
+  height: 400px;
+}
+
+.graduated-line {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(54, 82, 63, 1) 0%,
+    rgba(234, 229, 225, 11) 100%
+  );
+  border: none;
 }
 
 /* Responsividade */
@@ -104,15 +308,16 @@ body {
     height: 400px;
   }
 
-  .image-flower img {
+  .flowers img {
     height: 70%;
   }
 
-  .weddings-names, .initials {
+  .weddings,
+  .initials {
     font-size: 22px; /* Ajuste do tamanho da fonte */
   }
 
-  .day-information-text, .more-informations-text {
+  .day-information-text {
     font-size: 28px; /* Ajuste do tamanho da fonte */
   }
 }
@@ -149,16 +354,28 @@ body {
     height: 300px;
   }
 
-  .image-flower img {
-    height: 50%;
+  .weddings h1 {
+    font-size: 40px; /* Ajuste do tamanho da fonte */
   }
 
-  .weddings-names, .initials {
-    font-size: 18px; /* Ajuste do tamanho da fonte */
-  }
-
-  .day-information-text, .more-informations-text {
+  .day-information-text,
+  .more-informations-text {
     font-size: 24px; /* Ajuste do tamanho da fonte */
+  }
+}
+
+@media (max-width: 670px) {
+  .aspas {
+    top: 0;
+    left: 0;
+  }
+
+  .flowers img:first-child {
+    left: -280px;
+  }
+
+  .flowers img:last-child {
+    right: -280px;
   }
 }
 
@@ -194,206 +411,30 @@ body {
     height: 200px;
   }
 
-  .image-flower img {
-    height: 30%;
+  .weddings h1 {
+    gap: 0;
+    font-size: 24px; /* Ajuste do tamanho da fonte */
   }
 
-  .weddings-names, .initials {
-    font-size: 14px; /* Ajuste do tamanho da fonte */
+  .initials {
+    gap: 0;
   }
 
-  .day-information-text, .more-informations-text {
+  .text-invite {
+    font-size: 18px; /* Ajuste do tamanho da fonte */
+  }
+
+  .day-information-text,
+  .more-informations-text {
     font-size: 20px; /* Ajuste do tamanho da fonte */
   }
+  .hide-mobile {
+    display: none;
+  }
 }
 
-.second, .third {
-  flex-wrap: wrap;
-}
-
-.aspas {
-  position: absolute;
-  bottom: 85%;
-  left: -12%;
-}
-
-.aspas img {
-  width: 60px;
-}
-
-.content-second-section {
-  position: relative;
-  display: flex;
-  max-width: 40%;
-  flex-wrap: wrap;
-  z-index: 1;
-}
-
-.second-section-references {
-  position: absolute;
-  bottom: -30px;
-  right: 50px;
-}
-
-.smoke-second {
-  position: absolute;
-  height: 70%;
-}
-
-/* Terceira sessão */
-
-.flowers {
-  height: 100%;
-}
-
-.smoke {
-  position: absolute;
-  margin-right: 2500px;
-  overflow: none;
-}
-
-.smoke img {
-  height: 2500px;
-}
-
-.image-flower img {
-  height: 100%;
-}
-
-.right {
-  right: -20%;
-}
-
-.left {
-  left: -18%;
-}
-
-.content-third-section {
-  position: relative;
-  display: flex;
-  justify-content: center; /* Ajuste para centralizar */
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  width: 80%;
-}
-
-.image-flower {
-  position: absolute;
-  z-index: 1;
-  height: 20%;
-}
-
-.weddings {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.weddings-names, .initials {
-  color: #36523F;
-  font-family: "Playfair";
-  width: 30%;
-  display: flex; /* Adicionado para alinhar verticalmente */
-  align-items: center; /* Adicionado para alinhar verticalmente */
-  justify-content: center;
-  text-align: center;
-}
-
-.weddings-names {
-  font-size: 25.6px;
-}
-
-.leandroname {
-  margin-left: 20px;
-}
-
-.initials {
-  font-size: 58px;
-}
-
-.initials span {
-  font-family: "Montserrat";
-  font-weight: 200;
-  font-size: 35px;
-  color: #A34723;
-}
-
-.all-parents {
-  width: 80%;
-  text-align: center;
-}
-
-.parents-name {
-  font-family: "Aileron";
-  font-size: 11.8px;
-  display: flex;
-  color: #36523F;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.text-invite {
-  font-family: "Aileron";
-  font-size: 11.8px;
-  color: #36523F;
-  margin: 2%;
-}
-
-.informations {
-  display: flex;
-  width: 70%;
-  flex-direction: column;
-  align-items: center;
-}
-
-.day-information {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.day-information-text {
-  font-family: "Montserrat";
-  font-weight: 300;
-  color: #A34723;
-  font-size: 26px;
-}
-
-.more-informations {
-  margin-bottom: 25px;
-}
-
-.more-informations-text {
-  font-family: "Aileron";
-  font-size: 20px;
-  color: #6B8272;
-}
-
-/* Fim terceira sessão */
-
-/* Quarta sessão */
-
-.fourth {
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-.fourth h1 {
-  font-family: "Montserrat";
-  font-family: "Aileron";
-  color: #36523f;
-  font-size: 100%;
-}
-
-.qr-code img {
-  height: 400px;
-}
-
-.graduated-line {
-  height: 1px;
-  background: linear-gradient(to right, rgba(54, 82, 63, 1) 0%, rgba(234, 229, 225, 11) 100%);
-  border: none;
+@media (max-width: 300px) {
+  .hide-300 {
+    display: none;
+  }
 }
